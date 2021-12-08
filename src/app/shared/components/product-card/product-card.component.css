@@ -1,0 +1,17 @@
+.card{
+margin-bottom: 30px;
+}
+.card-footer{
+    padding: 0;
+}
+.card .card-img-top{
+    height: 22vw
+}
+.card-footer button{
+    cursor: pointer;
+}
+/* 
+ image{
+ !important;
+/* object-fit: cover; */
+ 

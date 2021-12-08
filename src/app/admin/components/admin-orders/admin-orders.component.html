@@ -1,0 +1,20 @@
+<h1>Orders</h1>
+
+<table class="table" *ngIf="orders$ | async as orders">
+    <thead>
+        <tr>
+            <th>Customer</th>
+            <th>Date</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let order of orders">
+            <td>name</td>
+            <td>{{order.datePlaced | date}}</td>
+            <td>
+                <a [routerLink]="['/order-details/' , order.key]">view</a>
+            </td>
+        </tr>
+    </tbody>
+</table>
